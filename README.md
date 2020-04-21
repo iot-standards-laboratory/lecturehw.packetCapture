@@ -70,6 +70,8 @@
   cd lecturehw.packetCapture/bin
   ```
 
+  - bin 디렉터리 내에는 sctp, quic, coap 3개의 디렉터리가 있으며, 각 디렉터리 내에는 서버 및 클라이언트 샘플 파일이 존재함
+
 - bin 디렉터리내에 있는 2개의 실행파일 권한을 수정함
 
   ```bash
@@ -84,8 +86,15 @@
   sudo wireshark
   ```
 
-
 # SCTP Capture
+
+## sctp 디렉터리로 이동
+
+- bin 디렉터리 내에 있는 sctp 디렉터리로 이동
+
+```
+cd sctp
+```
 
 ## sctp server 실행
 
@@ -99,7 +108,13 @@
 ./sctp -port 9000 -ip localhost
 ```
 
+## bin 디렉터리로 이동
 
+- 서버 및 클라이언트를 종료하고, 각 터미털의 working directory를 bin 디렉터리로 이동함
+
+```bash
+cd ..
+```
 
 # QUIC Capture
 
@@ -112,7 +127,33 @@
 
 # CoAP Capture
 
+## coap 디렉터리로 이동
 
+- bin 디렉터리 내에 있는 coap 디렉터리로 이동
+
+```
+cd coap
+```
+
+## sctp server 실행
+
+```bash
+./server
+```
+
+## sctp client 실행
+
+```bash
+./client
+```
+
+## bin 디렉터리로 이동
+
+- 서버 및 클라이언트를 종료하고, 각 터미털의 working directory를 bin 디렉터리로 이동함
+
+```bash
+cd ..
+```
 
 # Packet Analysis 
 
@@ -138,5 +179,9 @@
 
   ![image-20200407100400424](.README.assets/image-20200407100400424.png)
 
-[test](.README.assets/test.mp4)
+
+
+# Youtube Link 
+
+- TBD
 
