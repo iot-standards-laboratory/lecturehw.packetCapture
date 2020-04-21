@@ -54,22 +54,26 @@
     sudo apt install git
     ```
 
-# Download SCTP and QUIC sample
+# Download Sample Files
 
-- 본 과제에서 사용할 SCTP 및 QUIC 패킷 전송 프로그램은 본 레포지토리의 bin 디렉터리에 올려두었음
+- 본 과제에서 사용할 SCTP, QUIC 및 CoAP 패킷 전송 프로그램은 본 레포지토리의 bin 디렉터리에 올려두었음
 
-- `git clone https://github.com/iot-standards-laboratory/lecturehw.sctp_quic_capture.git`를 통해 샘플 프로그램을 다운로드함
+- 아래 명령을 통해 샘플 프로그램을 다운로드함
+
+  ```bash
+  git clone https://github.com/iot-standards-laboratory/packetCapture.git
+  ```
 
 - 다운로드한 git 디렉터리내에 있는 bin 디렉터리로 이동함
 
   ```bash
-  cd lecturehw.sctp_quic_capture/bin
+  cd lecturehw.packetCapture/bin
   ```
 
 - bin 디렉터리내에 있는 2개의 실행파일 권한을 수정함
 
   ```bash
-  sudo chmod a+x *
+  sudo chmod -R a+x *
   ```
 
 # Wireshark 실행
@@ -80,7 +84,6 @@
   sudo wireshark
   ```
 
-  
 
 # SCTP Capture
 
@@ -107,6 +110,10 @@
 ./quic
 ```
 
+# CoAP Capture
+
+
+
 # Packet Analysis 
 
 - 패킷 캡처를 중지함
@@ -130,3 +137,8 @@
 - 필터에 quic을 입력하여 quic 패킷을 입력함
 
   ![image-20200407100400424](.README.assets/image-20200407100400424.png)
+
+
+
+<video src="C:/Users/pu0116/Videos/Captures/iot-standards-laboratory_packetCapture%202020-04-21%2009-16-45.mp4"></video>
+
