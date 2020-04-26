@@ -61,7 +61,7 @@
 - 아래 명령을 통해 샘플 프로그램을 다운로드함
 
   ```bash
-  git clone https://github.com/iot-standards-laboratory/packetCapture.git
+  git clone https://github.com/iot-standards-laboratory/lecturehw.packetCapture.git
   ```
 
 - 다운로드한 git 디렉터리내에 있는 bin 디렉터리로 이동함
