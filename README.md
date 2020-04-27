@@ -86,6 +86,14 @@
   sudo wireshark
   ```
 
+# Terminal 실행
+
+- 패킷 캡쳐를 위해서는 Server, Client, Wireshark 프로그램이 작동하여야 하며, 이를 위해 3개의 터미널을 실행함.
+
+  - Terminal은 Ctrl + Alt + T 로 실행할 수 있음
+
+    ![image-20200427111452687](.README.assets/image-20200427111452687.png)
+
 # SCTP Capture
 
 ## sctp 디렉터리로 이동
@@ -99,13 +107,13 @@ cd sctp
 ## sctp server 실행
 
 ```bash
-./sctp -server -port 9000
+./server
 ```
 
 ## sctp client 실행
 
 ```bash
-./sctp -port 9000 -ip localhost
+./client
 ```
 
 ## bin 디렉터리로 이동
@@ -118,11 +126,32 @@ cd ..
 
 # QUIC Capture
 
-- sample 프로그램을 실행하면 QUIC echo server를 실행한 후 echo client가  `ISL-Lecture.AdvancedMobileComputing`을 server에 전달함.
-- 다음 명령어를 통해 quic sample 프로그램을 실행할 수 있음
+## quic 디렉터리로 이동
+
+- bin 디렉터리 내에 있는 quic 디렉터리로 이동
+
+```
+cd quic
+```
+
+## quic server 실행
 
 ```bash
-./quic
+./server
+```
+
+## quic client 실행
+
+```bash
+./client
+```
+
+## bin 디렉터리로 이동
+
+- 서버 및 클라이언트를 종료하고, 각 터미털의 working directory를 bin 디렉터리로 이동함
+
+```bash
+cd ..
 ```
 
 # CoAP Capture
@@ -169,21 +198,21 @@ cd ..
 
 ## QUIC Analysis
 
-- QUIC을 분석하기 위해서는 특정 UDP 포트를 QUIC으로 Decode할 수 있도록 설정해야함
+- 필터에 quic을 입력하여 quic 패킷을 입력함
+
+  ![image-20200407100400424](.README.assets/image-20200407100400424.png)
+
+- Wireshark 버전에 따라 QUIC을 분석하기 위해서는 특정 UDP 포트를 QUIC으로 Decode할 수 있도록 설정해야함
 
 - 본 과제에서 사용하는 quic sample 프로그램은 4242 포트를 사용하였으므로, 여기서는 4242포트를 사용하는 UDP datagram을 QUIC으로 decode함
 
   ![image-20200407100153331](.README.assets/image-20200407100153331.png)
 
-- 필터에 quic을 입력하여 quic 패킷을 입력함
-
-  ![image-20200407100400424](.README.assets/image-20200407100400424.png)
-
 ## CoAP Analysis
 
-- 헬로우 월드
+- 필터에 coap을 입력하여 coap 패킷을 분석함
 
-# 
+  ![image-20200427112450856](.README.assets/image-20200427112450856.png)
 
 # Youtube Link 
 
