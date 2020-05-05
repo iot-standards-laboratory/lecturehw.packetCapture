@@ -2,8 +2,6 @@
 title : SCTP, QUIC, CoAP Packet Capture
 ~~~
 
-[Move to Document written in Korean](./README.kr.md)
-
 # Installation of VMware
 
 - Download and run the VMware workstation player installation file from https://vmware.com/kr.html
