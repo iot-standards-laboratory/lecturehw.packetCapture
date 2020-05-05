@@ -2,22 +2,6 @@
 title : SCTP, QUIC, CoAP Packet Capture
 ~~~
 
-> # Index
-
-[Installation of VMware](# Installation of VMware)  
-[Installation of Ubuntu](# Installation of Ubuntu)  
-[Installation of Wireshark](# Installation of Wireshark)  
-[Installation of Git  ](# Installation of Git)
-[Download Sample Files](# Download Sample Files)  
-[Wireshark 실행](# Wireshark 실행)  
-[Terminal 실행  ](# Terminal 실행)
-[SCTP Capture](# SCTP Capture)  
-[QUIC Capture  ](# QUIC Capture)
-[CoAP Capture  ](# CoAP Capture)
-[Packet Analysis   ](# Packet Analysis)
-[Youtube Link   ](# Youtube Link)
-[Sample Code Github Link](# Sample Code Github Link)  
-
 # Installation of VMware
 
 - VMware workstation player 설치파일을 https://vmware.com/kr.html에서 다운로드하여 실행함
